@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Inbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
+    <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
+    <link rel="stylesheet" href="slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/templatemo-upright.css">
+    <link rel="stylesheet" href="./css/default.css">
+<!--
+    
+TemplateMo 555 Upright
+
+https://templatemo.com/tm-555-upright
+
+-->
+</head>
+<body>    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Leftside bar -->
+            <div id="tm-sidebar" class="tm-sidebar"> 
+                <nav class="tm-nav">
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div>
+                        <div class="tm-brand-box">
+                            <h1 class="tm-brand">Priority Inbox</h1>
+                        </div>                
+                        <ul id="tm-main-nav">
+                            <li class="nav-item">                                
+                                <a href="#home" class="nav-link current">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-home nav-icon"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a href="#gallery" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-images nav-icon"></i>
+                                    Gallery
+                                </a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a href="#lab" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-user-friends nav-icon"></i>
+                                    Messages
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-envelope nav-icon"></i>
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.google.com" class="nav-link external" target="_parent" rel="sponsored">
+                                    <div class="triangle-right"></div>
+                                    <i class="fas fa-external-link-alt nav-icon"></i>
+                                    External
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="mb-3 tm-mt-100">
+                        Design: <a href="https://www.google.com" target="_parent" rel="sponsored">Os Project</a>
+                    </footer>
+                </nav>
+            </div>
+            
+            <div class="tm-main">
+                <!-- Home section -->
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-01.jpg"></div>                   
+                    <section id="home" class="tm-section">
+                        <h2 class="tm-text-primary">Welcome to Priority Inbox</h2>
+                        <hr class="mb-5">
+                        <div class="row">
+                            <div class="col-lg-6 tm-col-home mb-4">
+                                <div class="tm-text-container">
+                                    <div class="tm-icon-container mb-5 mr-0 ml-auto">
+                                        <i class="fas fa-satellite-dish fa-4x tm-text-primary"></i>
+                                    </div>                                
+                                    <p>
+                                        Priority Inbox is a message saving tool for users in which the user can arrange the task 
+                                        according to their Priority order . User can limit the number of messages a/c to his/her needs.
+                                    </p>
+                                    <p>
+
+                                    </p>
+                                </div>                                
+                            </div>
+                            <div class="col-lg-6 tm-col-home mb-4">
+                                <div class="tm-text-container">
+                                    <div class="tm-icon-container mb-5 mr-0 ml-auto">
+                                        <i class="fas fa-broadcast-tower fa-4x tm-text-primary"></i>
+                                    </div>                                 
+                                    <p>
+                                                                                The highest Priority message is shown at top . In case of same priority , the message which arrived last will be showing
+                                                                                at first.
+
+                                    </p>
+                                    <div class="text-right">
+                                        <a href="#gallery" class="btn btn-primary tm-btn-next h">Next Page</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div><label for="limit" id="lab" >Limit of the message you want to save:</label>
+                        <input type="number" id="limit" name="limit." placeholder="In numbers" class="h">
+                        <button onclick="set()" id="setbtn" class="btn btn-primary tm-btn-next h">Set</button><br>
+                        <hr class="tm-hr-short mb-5">
+                        <input type="text" id="message" class="h a" placeholder="Enter your messages here">
+                        <button onclick="func()" class="btn btn-primary tm-btn-next h">Submit</button>
+                        <div id="show"></div>
+                        <div class="acd"></div>
+                        <table class="abcd">
+                            <tr>
+                                <th class="aa">Messages&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </th>
+                                <th>Occurance</th>
+                                
+                            </tr>
+                            
+                        </table>
+                    </section>
+                </div>
+               
+                <div class="tm-section-wrap">
+                    <div class="tm-parallax" data-parallax="scroll" data-image-src="img/img-04.jpg"></div>
+                    <div id="contact" class="tm-section">
+                        <h2 class="tm-text-primary">Contact Us</h2>
+                        <hr class="mb-5">
+                        <ul>
+                            <li class="tm-text-primary ab">Vibhanshu Sharma</li>
+                            <li class="tm-text-primary ab">Yasasvi Sai</li>
+                            <li class="tm-text-primary ab">Abhiram</li>
+                            <li class="tm-text-primary ab">Vishal Srivastav</li>
+                            <!-- <li class="tm-text-primary ab">Vibhanshu Sharma</li> -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Copyright -->                
+                <div class="tm-section-wrap tm-copyright row">
+                    <div class="col-12">
+                        <div class="text-right">
+                            Copyright 2023 Company
+                        </div> 
+                    </div>
+                </div>                 
+            </div> <!-- .tm-main -->                      
+        </div> <!-- .row -->
+    </div> <!-- .container-fluid -->
+    <script src="js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
+    <script src="js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
+    <script src="js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>     <!-- https://imagesloaded.desandro.com/ -->
+    <script src="js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+    <script src="slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="js/templatemo-script.js"></script>
+    <script src="./js/default.js"></script>
+</body>
+</html> 
